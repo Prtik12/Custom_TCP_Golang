@@ -46,17 +46,6 @@ Paste the server code into `main.go`.
 go run main.go
 ```
 
-You should see:
-```
-Listening on :3000
-```
-
-🔁 To build a binary:
-```bash
-go build -o tcp-server main.go
-./tcp-server
-```
-
 ---
 
 ## 🧪 Test the Server
@@ -89,17 +78,6 @@ Received message (127.0.0.1:PORT): Your message here
 
 ---
 
-## 💬 Example Messages
-
-```txt
-Hello, server!
-{"type": "ping", "status": "ok"}
-This is a multiline
-test message!
-🚀 Go is awesome!
-```
-
----
 
 ## ⚙️ Configuration
 
