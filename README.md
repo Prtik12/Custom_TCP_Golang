@@ -5,26 +5,26 @@ It listens for incoming connections, receives messages from clients, and logs th
 
 ---
 
-## ✨ Features
+## Features
 
-✅ Accepts multiple simultaneous TCP client connections  
-✅ Reads incoming messages and prints them with sender info  
-✅ Responds to clients with `"Message received"`  
-✅ Uses goroutines for efficient concurrency  
-✅ Buffered message channel to prevent blocking
-
----
-
-## ⚙️ Requirements
-
-- ✅ [Go 1.18+](https://golang.org/dl/) installed  
-- ✅ Terminal or shell access (Linux, macOS, or Windows)
+ Accepts multiple simultaneous TCP client connections  
+ Reads incoming messages and prints them with sender info  
+ Responds to clients with `"Message received"`  
+ Uses goroutines for efficient concurrency  
+ Buffered message channel to prevent blocking
 
 ---
 
-## 🚀 Getting Started
+## Requirements
 
-### 🧾 Step 1: Clone the Repository or Copy the Code
+-  [Go 1.18+](https://golang.org/dl/) installed  
+-  Terminal or shell access (Linux, macOS, or Windows)
+
+---
+
+##  Getting Started
+
+###  Step 1: Clone the Repository or Copy the Code
 
 ```bash
 git clone https://github.com/Prtik12/go-tcp-server.git
@@ -40,7 +40,7 @@ Paste the server code into `main.go`.
 
 ---
 
-### 🛠️ Step 2: Run the Server
+###  Step 2: Run the Server
 
 ```bash
 go run main.go
@@ -48,17 +48,17 @@ go run main.go
 
 ---
 
-## 🧪 Test the Server
+##  Test the Server
 
 Open a separate terminal and connect using `nc` or `telnet`.
 
-### 🧰 Using Netcat (`nc`)
+###  Using Netcat (`nc`)
 
 ```bash
 nc localhost 3000
 ```
 
-### 🧰 Using Telnet
+###  Using Telnet
 
 ```bash
 telnet localhost 3000
@@ -66,12 +66,12 @@ telnet localhost 3000
 
 Type a message and hit Enter. The server will:
 
-📩 Respond with:  
+ Respond with:  
 ```
 Message received
 ```
 
-🖨️ Print to the console:  
+ Print to the console:  
 ```
 Received message (127.0.0.1:PORT): Your message here
 ```
@@ -79,7 +79,7 @@ Received message (127.0.0.1:PORT): Your message here
 ---
 
 
-## ⚙️ Configuration
+##  Configuration
 
 To change the port the server listens on, update this line in `main.go`:
 
@@ -91,20 +91,20 @@ Change `":3000"` to any other port like `":4000"`.
 
 ---
 
-## 🔧 Ideas for Improvements
+##  Ideas for Improvements
 
-🧠 Want to make this server even better? Here are some suggestions:
+ Want to make this server even better? Here are some suggestions:
 
-- 🔌 Graceful shutdown with `os.Signal`
-- 🛡️ Client IP filtering or authentication
-- 📝 Structured logging using `logrus` or `zap`
-- 📤 Broadcast messages to all connected clients (chat server style!)
-- 📊 Metrics or logging to file
-- ⏱️ Add read/write timeouts for better resilience
+-  Graceful shutdown with `os.Signal`
+-  Client IP filtering or authentication
+-  Structured logging using `logrus` or `zap`
+-  Broadcast messages to all connected clients (chat server style!)
+-  Metrics or logging to file
+-  Add read/write timeouts for better resilience
 
 ---
 
-## 🧪 Testing Multiple Clients
+## Testing Multiple Clients
 
 Open several terminals and run:
 
@@ -116,7 +116,7 @@ Each connection can send messages independently!
 
 ---
 
-## 📁 File Structure
+## File Structure
 
 ```
 .
